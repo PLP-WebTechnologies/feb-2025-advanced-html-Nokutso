@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>What's a Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>What's A Form?</h1>
+        </header>
+        <main>
+        <!-- AN IMAGE -->
+        <img src="https://images.pexels.com/photos/7979442/pexels-photo-7979442.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="A picture of a person that looks like they are about to sign forms" width="500" height="500">
+        <h3>DEFINITION OF A FORM</h3>
+        <p>A form is a place where you can enter information.</p>
+        <p>For example: </p>
+        <!-- ORDERDED LIST -->
+        <ol type="i">
+            <li>A login form where you type your username and password.</li>
+            <li>A sign-up form where you enter your name, email, and phone number.</li>
+            <li>A feedback form where you write your comments.</li>
+        </ol>
+        <p>Forms help collect and send information! 😊</p>
+        <h3>THE KIND OF INFORMATION THAT IS ASKED ON A FORM: </h3>
+        <!-- TABLE -->
+        <table border="2">
+            <!-- TABLE HEADINGS-->
+            <thead>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Address</th>
+            </thead>
+            <!-- THE INFORMATION ADDED TO THE TABLE -->
+            <tbody>
+                <tr>
+                    <td>Saoirse Valentine</td>
+                    <td>saoirse_valentine@outlook.com</td>
+                    <td>(+27)78-909-6338</td>
+                    <td>Cape Town, Western Cape</td>
+                </tr>
+                <tr>
+                    <td>Timothee Williams</td>
+                    <td>williams_timothee@gmail.com</td>
+                    <td>(+27)63-738-3536</td>
+                    <td>Johannesburg North, Sandton</td>
+                </tr>
+                <tr>
+                    <td>Elizabeth Falcons</td>
+                    <td>bethFalcons@gmail.com</td>
+                    <td>(+27)73-673-1324</td>
+                    <td>Kimberly, Northern Cape</td>
+                </tr>
+                <tr>
+                    <td>Luka Ronan</td>
+                    <td>luka_ronan98@gmail.com</td>
+                    <td>(+27)89-635-3253</td>
+                    <td>Pretoria, Gauteng</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>TRY TO FILL IN THE EXAMPLE FORM:</h3>
+        <!-- THE ENTIRE FORM-->
+        <form>
+
+            <fieldset>
+                <legend>Personal Details</legend>
+                <!-- NAME -->
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" placeholder="Name" required>
+                <br><br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Surname" required>
+                <br><br>
+                <!-- EMAIL -->
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <br><br>
+                <!-- DATE OF BIRTH -->
+                 <label>Date of Birth:</label>
+                 <input type="date" id="birthday" name="birthday" required>
+                 <br><br>
+                <!-- PASSWORD -->
+                 <label for="password">Password: </label>
+                 <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="8" maxlength="20">
+                 <br><br>
+                <!-- GENDER RADIO BUTTONS -->
+                <label for="gender">Gender: </label>
+                <input type="radio" id="gender" name="gender">Male
+                <input type="radio" id="gender" name="gender">Female
+                <input type="radio" id="gender" name="gender">Other
+                <input type="radio" id="gender" name="gender">Prefer Not to Say
+                <br><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Residential Address</legend>
+                <label for="address">Address: </label>
+                <textarea id="address" name="address" rows="3" cols="25" placeholder="Enter Your Full Address" required></textarea>
+                <br><br>
+                <label for="country">Country</label>
+                <!-- DROPDOWN -->
+                <select id="country" name="country">
+                    <option>-- Select --</option>
+                    <option value="botswana">Botswana</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="lesotho">Lesotho</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="south africa">South Africa</option>
+                    <option value="uganda">Uganda</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Interests</legend>
+                <!-- CHECHKBOXES -->
+                <label for="hobbies">Hobbies:</label>
+                <input type="checkbox" id="hobbies" name="hobbies" value="sports"> Sports
+                <input type="checkbox" name="hobbies" value="music"> Music
+                <input type="checkbox" name="hobbies" value="art"> Art
+                <input type="checkbox" name="hobbies" value="travel"> Travel
+                <input type="checkbox" name="hobbies" value="other"> Other
+                <br><br>
+                <label for="otherHobby">If chose other,describe the hobby:</label>
+                <textarea id="otherHobby" name="otherHobby" placeholder="A Short Description of What The Hobby is"></textarea>
+            </fieldset>
+        </form>
+        </main>
+    </body>
+</html>
+
+<!--Create an index.html file.
+Add an ordered list with roman numerals☀️
+Add an external image from pexels.com☀️
+Add a table of 5 contacts with; name, address, mobile and emails☀️
+Add a registration form☀️
+Note
+
+The registration form should have:
+
+Name, email, password, and date fields. ☀️
+A dropdown, radio buttons, and checkboxes.☀️
+Proper labels and placeholders.☀️
+Required fields and validation attributes.
+Ensure proper indentation and commenting.☀️
+-->
